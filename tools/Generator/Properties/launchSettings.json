@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Generator": {
+      "commandName": "Project",
+      "commandLineArgs": "\"D:\\VsCode\\Github\\Fabulous\\tools\\Generator\\Xamarin.Forms.Core.json\" \"D:\\VsCode\\Github\\Fabulous\\src\\Fabulous.Core\\Xamarin.Forms.Core.fs\"",
+      "workingDirectory": "D:\\VsCode\\Github\\Fabulous"
+    }
+  }
+}

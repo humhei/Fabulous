@@ -346,7 +346,7 @@ module App =
             View.NavigationPage(pages=
                 [ yield 
                     View.ContentPage(useSafeArea=true,
-                        padding = new Thickness (10.0, 20.0, 10.0, 5.0), 
+                        padding = new Thickness (10.0, 100.0, 10.0, 5.0), 
                         content= View.ListView(
                             items=[ 
                                  View.Button(text = "TabbedPage #1 (various controls)", command=(fun () -> dispatch (SetRootPageKind Tabbed1)))
@@ -611,6 +611,12 @@ module App =
                   View.ScrollingContentPage("Picker", 
                      [ View.Label(text="Picker:")
                        View.Picker(title="Choose Color:", textColor=snd pickerItems.[pickedColorIndex], selectedIndex=pickedColorIndex, itemsSource=(Array.map fst pickerItems), horizontalOptions=LayoutOptions.CenterAndExpand, selectedIndexChanged=(fun (i, item) -> dispatch (PickerItemChanged i)))
+                       MainPageButton
+                     ]))
+
+               dependsOn () (fun model () -> 
+                  View.ScrollingContentPage("Checkbox", 
+                     [ View.CheckBox()
                        MainPageButton
                      ]))
                       

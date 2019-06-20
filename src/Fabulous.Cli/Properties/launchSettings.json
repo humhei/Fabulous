@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Fabulous.Cli": {
+      "commandName": "Project",
+      "commandLineArgs": "--watch --send \"D:\\VsCode\\Github\\Fabulous\\samples\\CounterApp\\CounterApp\\CounterApp.fsproj\""
+    }
+  }
+}

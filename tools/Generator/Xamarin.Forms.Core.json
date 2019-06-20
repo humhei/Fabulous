@@ -2789,6 +2789,27 @@
     {
       "name": "Xamarin.Forms.TabBar",
       "members": []
+    },
+    {
+      "name": "Xamarin.Forms.CheckBox",
+      "members": [
+        {
+          "name": "CheckedChanged",
+          "uniqueName": "CheckBox_CheckedChanged",
+          "defaultValue": "null",
+          "inputType": "Xamarin.Forms.CheckedChangedEventArgs -> unit",
+          "convToModel": "(fun f -> System.EventHandler<Xamarin.Forms.CheckedChangedEventArgs>(fun _sender args -> f args))"
+        },
+        {
+          "name": "IsChecked",
+          "defaultValue": "false"
+        },
+        {
+          "name": "Color",
+          "defaultValue": "Xamarin.Forms.Color.Default"
+        }
+
+      ]
     }
   ]
 }
